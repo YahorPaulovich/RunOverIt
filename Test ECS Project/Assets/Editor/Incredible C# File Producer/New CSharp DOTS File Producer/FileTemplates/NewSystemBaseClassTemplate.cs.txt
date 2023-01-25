@@ -1,0 +1,12 @@
+using Unity.Entities;
+using Unity.Mathematics;
+using Unity.Rendering;
+using Unity.Transforms;
+
+public partial class #SCRIPTNAME# : SystemBase
+{
+    protected override void OnUpdate()
+    {
+        throw new System.NotImplementedException();
+    }
+}
