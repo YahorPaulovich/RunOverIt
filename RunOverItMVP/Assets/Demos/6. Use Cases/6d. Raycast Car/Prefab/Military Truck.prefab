@@ -906,7 +906,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -1235,7 +1234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -3625,7 +3623,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -4038,7 +4035,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -4367,7 +4363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -4385,12 +4380,12 @@ MonoBehaviour:
   EditAxes: 1
   HingeAxisLocal:
     x: 1
-    y: 6.140989e-21
-    z: 7.105432e-15
+    y: 6.988022e-21
+    z: 7.1054324e-15
   HingeAxisInConnectedEntity:
     x: 0.99999976
     y: 4.446923e-21
-    z: -6.7762636e-21
+    z: -8.4703295e-21
   EditLimits: 1
   PerpendicularAxisLocal:
     x: 7.1054265e-15
@@ -5008,7 +5003,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
@@ -5312,7 +5306,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedBody: {fileID: 3718338394545543432}
   EnableCollision: 0
-  RaiseImpulseEvents: 0
   MaxImpulse:
     x: Infinity
     y: Infinity
