@@ -3168,7 +3168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938926518310289145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.9, z: -12.79}
+  m_LocalPosition: {x: 0, y: 15.823, z: -13.558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3780,7 +3780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActiveAtStart: 1
-  TopSpeed: 25
+  TopSpeed: 35
   MaxSteeringAngle: 35
   SteeringDamping: 0.1
   SpeedDamping: 0.01
@@ -3808,13 +3808,13 @@ MonoBehaviour:
   - {fileID: 382854581}
   - {fileID: 2096070935}
   wheelBase: 0.5
-  wheelFrictionRight: 0.2
-  wheelFrictionForward: 0.25
-  wheelMaxImpulseRight: 1.5
-  wheelMaxImpulseForward: 2
+  wheelFrictionRight: 0.75
+  wheelFrictionForward: 0.75
+  wheelMaxImpulseRight: 5
+  wheelMaxImpulseForward: 5
   suspensionLength: 1
   suspensionStrength: 1500
-  suspensionDamping: 200
+  suspensionDamping: 2000
   steeringWheels:
   - {fileID: 382854581}
   - {fileID: 2096070935}
@@ -3838,7 +3838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MotionType: 0
   m_Smoothing: 1
-  m_Mass: 2541
+  m_Mass: 2500
   m_LinearDamping: 0.01
   m_AngularDamping: 0.05
   m_InitialLinearVelocity:
