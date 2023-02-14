@@ -57,13 +57,6 @@
 # Current content demonstration
   Content demonstration as of 29.01.2023
 
-## Test Driven Vehicle
-![Test Driven Vehicle_Compressed](https://user-images.githubusercontent.com/44481585/215354934-c1aa02c7-01e5-4306-9ed1-2f25950192e5.gif)
-
-
-## Test Third-Person Controller
-![Test Third-Person Controller_Compressed](https://user-images.githubusercontent.com/44481585/215354938-7fee3b29-a66c-4870-9382-14a06e82783c.gif)
-
 
 ## Test Tower Defense
 ![Test Tower Defense_Compressed](https://user-images.githubusercontent.com/44481585/215354940-1c0e70c5-f689-4a55-b458-2afbe6f3f843.gif)
