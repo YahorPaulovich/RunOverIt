@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
-
 public class EnemyAuthoring : MonoBehaviour
 { 
     public GameObject Prefab;

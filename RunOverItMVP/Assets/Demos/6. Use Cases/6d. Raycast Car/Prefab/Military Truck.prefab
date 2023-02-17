@@ -3640,12 +3640,12 @@ MonoBehaviour:
   EditAxes: 1
   HingeAxisLocal:
     x: -1
-    y: -2.5410988e-21
-    z: -7.10543e-15
+    y: -5.0821977e-21
+    z: -7.105432e-15
   HingeAxisInConnectedEntity:
     x: -0.99999976
-    y: -2.5410988e-21
-    z: 3.3881318e-21
+    y: -4.6586812e-21
+    z: 5.9292306e-21
   EditLimits: 1
   PerpendicularAxisLocal:
     x: -7.1054274e-15
@@ -4380,12 +4380,12 @@ MonoBehaviour:
   EditAxes: 1
   HingeAxisLocal:
     x: 1
-    y: 6.988022e-21
-    z: 7.1054324e-15
+    y: 9.529121e-21
+    z: 7.105433e-15
   HingeAxisInConnectedEntity:
     x: 0.99999976
-    y: 4.446923e-21
-    z: -8.4703295e-21
+    y: 6.140989e-21
+    z: -1.0164395e-20
   EditLimits: 1
   PerpendicularAxisLocal:
     x: 7.1054265e-15

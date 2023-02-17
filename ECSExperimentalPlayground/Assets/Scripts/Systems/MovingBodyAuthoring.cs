@@ -1,3 +1,4 @@
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
@@ -7,7 +8,6 @@ using UnityEngine;
 public struct MovingBody : IComponentData
 {
     public float Velocity;
-    public float TurningAngle;
 }
 
 public class MovingBodyAuthoring : MonoBehaviour
@@ -27,31 +27,33 @@ class MovingBodyAuthoringBaker : Baker<MovingBodyAuthoring>
     }
 }
 
+[BurstCompile]
 public partial struct MovingBodySystem : ISystem
 {
+    [BurstCompile]
     public void OnCreate(ref SystemState state) { }
 
+    [BurstCompile]
     public void OnDestroy(ref SystemState state) { }
 
+    [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        foreach (var (target, transform, moving, velocity) in SystemAPI.Query<RefRO<Target>, RefRO<LocalTransform>, RefRW<MovingBody>, RefRW<PhysicsVelocity>>().WithAll<MovingBody>())
+        foreach (var (target, transform, moving, velocity) in SystemAPI.Query<RefRO<Target>, RefRW<LocalTransform>, RefRW<MovingBody>, RefRW<PhysicsVelocity>>().WithAll<MovingBody>())
         {
             float3 targetPosition = SystemAPI.GetComponent<LocalTransform>(target.ValueRO.TargetEntity).Position;     
             float3 direction = math.normalize(targetPosition - transform.ValueRO.Position);
             
             if (math.distance(targetPosition, transform.ValueRO.Position) < target.ValueRO.MaxDistance)
             {
+                // quaternion.AxisAngle(math.up(), math.PI * 0.5f)
+                //quaternion rotation = quaternion.LookRotation(direction, math.up());
+                //transform.ValueRW.Rotation = quaternion.LookRotation(direction, math.up());
+
                 velocity.ValueRW.Linear = moving.ValueRO.Velocity * direction;
-
-                quaternion targetRotation = SystemAPI.GetComponent<LocalTransform>(target.ValueRO.TargetEntity).Rotation;
-                //velocity.ValueRW.Angular.y = targetRotation.value.y;
-
-                quaternion rotation = quaternion.LookRotationSafe(direction, math.up());
-               velocity.ValueRW.Angular = new float3(transform.ValueRO.Rotation.value.x, rotation.value.y, transform.ValueRO.Rotation.value.z);
             }
-            //else
-            //    velocity.ValueRW.Linear = new float3(0, 0, 0);
+            else
+                velocity.ValueRW.Linear = new float3(0, 0, 0);
         }
     }
 }

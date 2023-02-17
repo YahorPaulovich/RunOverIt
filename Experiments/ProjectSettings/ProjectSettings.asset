@@ -787,7 +787,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: UNITY_POST_PROCESSING_STACK_V2;DISABLE_HYBRID_V2_SRP_LOGS;UNITY_DOTS_BUILTIN_BUILDS_DEFAULT
+    Standalone: 
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
