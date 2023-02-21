@@ -97,7 +97,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -225,7 +225,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -161, y: -26}
-      snapOffsetDelta: {x: -5, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -466,6 +466,19 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: AINavigationOverlay
+      index: 10
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
@@ -476,9 +489,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.688794, y: -2.1758451, z: -7.5674706}
+    m_Target: {x: 13.469579, y: 25.039064, z: -23.217646}
     speed: 2
-    m_Value: {x: 2.688794, y: -2.1758451, z: -7.5674706}
+    m_Value: {x: 13.469579, y: 25.039064, z: -23.217646}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -524,13 +537,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.38538265, y: -0.0633748, z: 0.026208267, w: 0.9209092}
+    m_Target: {x: -0.28527433, y: 0.26052645, z: -0.08447018, w: -0.91938436}
     speed: 2
-    m_Value: {x: -0.38538265, y: 0.0633748, z: -0.026208267, w: -0.9209092}
+    m_Value: {x: -0.2852743, y: 0.26052645, z: -0.084470175, w: -0.9193843}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 3.8022807
     speed: 2
-    m_Value: 12.124355
+    m_Value: 3.8022807
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -719,7 +732,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 19842
+  controlID: 40787
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -784,9 +797,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ba830000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 18fbffff1afbffff1cfbffffe27f0000ea7f000002800000
+      m_SelectedIDs: 06800000
+      m_LastClickedID: 32774
+      m_ExpandedIDs: 46e0ffff56e0ffff1cfbffff22fbffffea7f000002800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -835,8 +848,8 @@ MonoBehaviour:
     width: 393
     height: 350
   m_SerializedDataModeController:
-    m_DataMode: 1
-    m_PreferredDataMode: 1
+    m_DataMode: 2
+    m_PreferredDataMode: 2
     m_SupportedDataModes: 010000000200000003000000
     isAutomatic: 1
   m_ViewDataDictionary: {fileID: 0}
@@ -925,23 +938,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Graphics/Zombiegirl/Prefabs
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Graphics/Zombiegirl/Prefabs
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Yahor\Projects\Unity Projects\RunOverIt\RunOverItMVP
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 4c860000
-    m_LastClickedID: 34380
-    m_ExpandedIDs: 00000000008600000286000004860000068600000886000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 16860000
+    m_LastClickedID: 34326
+    m_ExpandedIDs: 0000000016860000188600001a8600001c8600001e86000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -969,7 +982,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000008600000286000004860000068600000886000000ca9a3b
+    m_ExpandedIDs: 0000000016860000188600001a8600001c8600001e86000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -994,10 +1007,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ba830000
-    m_LastClickedInstanceID: 33722
+    m_SelectedInstanceIDs: 22beffff
+    m_LastClickedInstanceID: -16862
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300007c960000688000005887000000000000
+    m_ExpandedInstanceIDs: c62300007c9600000000000068800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1173,7 +1186,7 @@ MonoBehaviour:
         m_Identifier: UnityEditorInternal.Profiling.CPUProfilerModule, UnityEditor.CoreModule,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_PaneScroll: {x: 0, y: 0}
-        m_ViewType: 1
+        m_ViewType: 0
         updateViewLive: 0
         m_CurrentFrameIndex: -1
         m_HierarchyOverruledThreadFromSelection: 0
@@ -2095,7 +2108,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 32762
+  m_LastSelectedObjectID: -7694
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2334,8 +2347,8 @@ MonoBehaviour:
     height: 926
   m_SerializedDataModeController:
     m_DataMode: 3
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
+    m_PreferredDataMode: 3
+    m_SupportedDataModes: 010000000200000003000000
     isAutomatic: 0
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

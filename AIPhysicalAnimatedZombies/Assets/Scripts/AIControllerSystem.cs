@@ -3,11 +3,12 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
+using UnityEngine.Profiling;
 
 public partial class AIControllerSystem : SystemBase
 {
     protected override void OnUpdate()
-    {
+    {     
         PhysicsWorld physicsWorld = SystemAPI.GetSingleton<PhysicsWorldSingleton>().PhysicsWorld;
         NativeList<DistanceHit> distanceHits = new NativeList<DistanceHit>(Allocator.TempJob);
 
@@ -16,6 +17,7 @@ public partial class AIControllerSystem : SystemBase
             // Clear our detected hits list between each use
             distanceHits.Clear();
 
+            Profiler.BeginSample("AIControllerSystem");
             // Create a hit collector for the detection hits
             AllHitsCollector<DistanceHit> hitsCollector = new AllHitsCollector<DistanceHit>(aiController.DetectionDistance, ref distanceHits);
 
@@ -29,7 +31,7 @@ public partial class AIControllerSystem : SystemBase
             physicsWorld.CalculateDistance(distInput, ref hitsCollector);
 
             // Iterate on all detected hits to try to find a human-controlled character...
-            Entity selectedTarget = Entity.Null;
+            Entity selectedTarget = Entity.Null;    
             for (int i = 0; i < hitsCollector.NumHits; i++)
             {
                 Entity hitEntity = distanceHits[i].Entity;
@@ -51,6 +53,7 @@ public partial class AIControllerSystem : SystemBase
             {
                 characterControl.ValueRW.MoveVector = float3.zero;
             }
-        }
+            Profiler.EndSample();
+        }     
     }
 }

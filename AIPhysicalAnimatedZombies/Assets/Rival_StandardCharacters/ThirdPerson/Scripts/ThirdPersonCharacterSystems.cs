@@ -6,6 +6,7 @@ using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 using Rival;
+using UnityEngine.Profiling;
 
 [UpdateInGroup(typeof(KinematicCharacterPhysicsUpdateGroup))]
 [BurstCompile]
@@ -40,6 +41,7 @@ public partial struct ThirdPersonCharacterPhysicsUpdateSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
+        Profiler.BeginSample("ThirdPersonCharacterPhysicsUpdateSystem");
         _context.OnSystemUpdate(ref state);
         _baseContext.OnSystemUpdate(ref state, SystemAPI.Time, SystemAPI.GetSingleton<PhysicsWorldSingleton>());
         
@@ -49,6 +51,7 @@ public partial struct ThirdPersonCharacterPhysicsUpdateSystem : ISystem
             BaseContext = _baseContext,
         };
         job.ScheduleParallel();
+        Profiler.EndSample();
     }
 
     [BurstCompile]
@@ -98,6 +101,7 @@ public partial struct ThirdPersonCharacterVariableUpdateSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
+        Profiler.BeginSample("ThirdPersonCharacterVariableUpdateSystem");
         _context.OnSystemUpdate(ref state);
         _baseContext.OnSystemUpdate(ref state, SystemAPI.Time, SystemAPI.GetSingleton<PhysicsWorldSingleton>());
         
@@ -107,6 +111,7 @@ public partial struct ThirdPersonCharacterVariableUpdateSystem : ISystem
             BaseContext = _baseContext,
         };
         job.ScheduleParallel();
+        Profiler.EndSample();
     }
 
     [BurstCompile]

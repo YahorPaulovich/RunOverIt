@@ -1168,6 +1168,11 @@ PrefabInstance:
       propertyPath: CharacterProperties.GroundSnappingDistance
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6689285571920954877, guid: 5fbcc801dea8fd640a004697d22ed448,
+        type: 3}
+      propertyPath: CharacterProperties.CustomPhysicsBodyTags.Tag06
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1313,7 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e06e6a7822352469a69eec69bfd719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 3645081687394186301, guid: 17ebeae864124d24bb2c5ad112f711e9, type: 3}
+  Prefab: {fileID: 3645081687394186301, guid: 87dfcd1254972cb42b1f420a2b8032ab, type: 3}
   Timer: 1
 --- !u!4 &1228136239
 Transform:

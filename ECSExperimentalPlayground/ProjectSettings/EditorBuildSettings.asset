@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/LiteTowerDefenseTestPlayground.unity
     guid: f5563b2a9ee386649bf188dd5ff00f78
   - enabled: 1
-    path: Assets/Scenes/LiteTowerDefenseTestPlayground/Entities.unity
+    path: Assets/Scenes/LiteExperimentalPlayground/Entities.unity
     guid: f998bc555d0ae394ca35fe30e8a4ce3d
   - enabled: 1
     path: Assets/Scenes/Basic/Main.unity
     guid: 6a40055e4922c5f479f784c08cbd2a2f
   - enabled: 1
-    path: Assets/Scenes/LiteTowerDefenseTestPlayground/Singletons.unity
+    path: Assets/Scenes/LiteExperimentalPlayground/Singletons.unity
     guid: 691d8b6b72016554199515572f15eb01
   m_configObjects: {}
