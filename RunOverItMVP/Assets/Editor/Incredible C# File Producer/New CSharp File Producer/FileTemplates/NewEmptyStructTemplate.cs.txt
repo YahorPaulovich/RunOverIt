@@ -1,7 +1,0 @@
-public struct #SCRIPTNAME#
-{
-    public #SCRIPTNAME#(string s)
-	{
-	    #NOTRIM#
-	}
-}
