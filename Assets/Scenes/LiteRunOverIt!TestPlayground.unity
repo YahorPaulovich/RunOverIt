@@ -30122,7 +30122,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 25
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -30147,8 +30147,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697935061}
-  m_LocalRotation: {x: 0.09665871, y: 0.90310335, z: -0.28474733, w: 0.30656233}
-  m_LocalPosition: {x: -34.4, y: 39.8, z: 44.3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.69, y: 25.823, z: -22.717999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30401,7 +30401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
-  m_Area: 2
+  m_Area: 0
   m_OverrideGenerateLinks: 1
   m_GenerateLinks: 1
   m_IgnoreFromBuild: 0
@@ -39678,6 +39678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183177653103498354, guid: 8961a3d232f798a4ba437f051e195c17,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1241
       objectReference: {fileID: 0}
     - target: {fileID: 2183177653103498355, guid: 8961a3d232f798a4ba437f051e195c17,
         type: 3}
