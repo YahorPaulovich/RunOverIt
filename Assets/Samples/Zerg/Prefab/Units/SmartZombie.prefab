@@ -35,7 +35,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8627191875856565828}
+  - {fileID: 2168099961098231956}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Owner: 1
-  Animator: {fileID: 2403195529219333182}
+  Animator: {fileID: 5257547643888974574}
   MoveAnimationSpeed: 0.4
   Life: 35
 --- !u!114 &7215712897132166869
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 5
   AttackRange: 0.3
---- !u!1001 &1784586822189966868
+--- !u!1001 &7618284183456305337
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -157,95 +157,90 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6010206441563009138}
     m_Modifications:
-    - target: {fileID: 4151753551021161002, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 2400166401165912663, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 167a73097549a9a4984d470dd2d7a82d, type: 3}
-    - target: {fileID: 4151753551021161002, guid: 43732b2fd580ff541ae6284710f4bb7c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4151753551021161002, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 2400166401165912663, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1543d6be4b9fcf340b3221ec2d907567, type: 2}
-    - target: {fileID: 7220960854481091306, guid: 43732b2fd580ff541ae6284710f4bb7c,
-        type: 3}
-      propertyPath: m_Name
-      value: Zombiegirl Animated
-      objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+    - target: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999571771059333783, guid: c551c97f7da277e48bd5176b140b46c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombiegirl W Kurniawan 4LOD Animated
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 43732b2fd580ff541ae6284710f4bb7c, type: 3}
---- !u!95 &2403195529219333182 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4151753551021161002, guid: 43732b2fd580ff541ae6284710f4bb7c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1784586822189966868}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8627191875856565828 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: c551c97f7da277e48bd5176b140b46c6, type: 3}
+--- !u!4 &2168099961098231956 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8033807173037908048, guid: 43732b2fd580ff541ae6284710f4bb7c,
+  m_CorrespondingSourceObject: {fileID: 8624171685600276525, guid: c551c97f7da277e48bd5176b140b46c6,
     type: 3}
-  m_PrefabInstance: {fileID: 1784586822189966868}
+  m_PrefabInstance: {fileID: 7618284183456305337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5257547643888974574 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2400166401165912663, guid: c551c97f7da277e48bd5176b140b46c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7618284183456305337}
   m_PrefabAsset: {fileID: 0}
