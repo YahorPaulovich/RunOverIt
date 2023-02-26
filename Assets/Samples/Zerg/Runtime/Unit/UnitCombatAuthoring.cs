@@ -10,6 +10,10 @@ namespace ProjectDawn.Navigation.Sample.Zerg
         public float Damage = 10;
         public float AttackRange = 0.3f;
 
+        public float AggressionRadius = 3f;
+        public float Cooldown = 0.2f;
+        public float Speed = 0.5f;
+
         Entity m_Entity;
 
         void Awake()
@@ -19,9 +23,9 @@ namespace ProjectDawn.Navigation.Sample.Zerg
             world.EntityManager.AddComponentData(m_Entity, new UnitCombat
             {
                 Range = AttackRange,
-                AggressionRadius = 3,
-                Cooldown = 0.2f,
-                Speed = 0.5f,
+                AggressionRadius = AggressionRadius,
+                Cooldown = Cooldown,
+                Speed = Speed,
                 Damage = Damage,
             });
             world.EntityManager.AddComponentData(m_Entity, new UnitFollow

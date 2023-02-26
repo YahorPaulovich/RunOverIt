@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
-using UnityEngine;
 
 namespace ProjectDawn.Navigation.Sample.Zerg
 {
@@ -22,6 +19,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
         Move,
         Follow,
         Attack,
+        Death,
     }
 
     public struct UnitBrain : IComponentData

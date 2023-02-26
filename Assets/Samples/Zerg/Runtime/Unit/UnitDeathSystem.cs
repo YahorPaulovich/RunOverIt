@@ -1,7 +1,5 @@
 using Unity.Entities;
-using Unity.Mathematics;
 using UnityEngine;
-using ProjectDawn.Navigation;
 
 namespace ProjectDawn.Navigation.Sample.Zerg
 {

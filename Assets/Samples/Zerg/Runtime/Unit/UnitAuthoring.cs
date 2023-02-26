@@ -41,6 +41,11 @@ namespace ProjectDawn.Navigation.Sample.Zerg
                 world.EntityManager.AddComponentObject(m_Entity, Animator);
         }
 
+        private void FixedUpdate()
+        {
+            Life = World.DefaultGameObjectInjectionWorld.EntityManager.GetComponentData<UnitLife>(m_Entity).Life;
+        }
+
         void OnDestroy()
         {
             var world = World.DefaultGameObjectInjectionWorld;
