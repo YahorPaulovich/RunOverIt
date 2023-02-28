@@ -14,7 +14,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
                 if (!animator || !animator.isActiveAndEnabled)
                     return;
 
-                //animator.SetBool(unit.AttackId, brain.State == UnitBrainState.Death);
+                animator.SetBool(unit.DeathId, brain.State == UnitBrainState.Death);
                 animator.SetBool(unit.AttackId, brain.State == UnitBrainState.Attack);
 
                 float speed = math.length(body.Velocity);

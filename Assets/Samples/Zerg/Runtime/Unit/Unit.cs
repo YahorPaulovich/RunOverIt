@@ -60,6 +60,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
         public float MoveSpeed;
         public int MoveSpeedId;
         public int AttackId;
+        public int DeathId;
     }
 
     public struct UnitSmartStop : IComponentData

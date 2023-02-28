@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 2798813026907106316}
   - component: {fileID: 4320699607801596022}
   - component: {fileID: 7215712897132166869}
+  - component: {fileID: 8187364281377477219}
   m_Layer: 0
   m_Name: SmartZombie
   m_TagString: Untagged
@@ -152,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed5c6dd07c7d6e4f857b420fa8f559a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 0.41
-  Height: 1.85
+  Radius: 0.38
+  Height: 2
 --- !u!114 &513424071289889313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +236,29 @@ MonoBehaviour:
   AggressionRadius: 20
   Cooldown: 0.2
   Speed: 0.5
+--- !u!136 &8187364281377477219
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010206441563009151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.26
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6347174057324998603
 GameObject:
   m_ObjectHideFlags: 0

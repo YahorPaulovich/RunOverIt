@@ -23,6 +23,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
             });
             world.EntityManager.AddComponentData(m_Entity, new UnitAnimator
             {
+                DeathId = Animator.StringToHash("Death"),
                 AttackId = Animator.StringToHash("Attack"),
                 MoveSpeed = MoveAnimationSpeed,
                 MoveSpeedId = Animator.StringToHash("Speed"),
