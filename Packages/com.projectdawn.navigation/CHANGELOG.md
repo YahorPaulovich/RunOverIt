@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this package will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
+## [3.1.4] - 2023-2-22
+- Changed com.unity.entities package version from 1.0.0-pre.15 to 1.0.0-pre.44
+- Fixed AgenAuthroing.Stop to correctly set velocity to zero
+
+## [3.1.3] - 2023-2-16
+- Added support for RectTransform
+
 ## [3.1.2] - 2023-2-10
 - Added SetDestinationDeferred to agent
 - Fixed navmesh area mask editor property work correctly
