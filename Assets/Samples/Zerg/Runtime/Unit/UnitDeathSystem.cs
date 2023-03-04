@@ -10,11 +10,11 @@ namespace ProjectDawn.Navigation.Sample.Zerg
         {
             Entities.ForEach((Entity entity, Transform transform, in UnitDead unitDead) =>
             {
-                var unitBrainState = EntityManager.GetComponentData<UnitBrain>(entity).State;
-                unitBrainState = UnitBrainState.Death;
+                // var unitBrainState = EntityManager.GetComponentData<UnitBrain>(entity).State;
+                // unitBrainState = UnitBrainState.Death;
 
-                // GameObject.Destroy(transform.gameObject);
-                // EntityManager.DestroyEntity(entity);
+                GameObject.Destroy(transform.gameObject);
+                EntityManager.DestroyEntity(entity);
             }).WithStructuralChanges().WithoutBurst().Run();
         }
     }
