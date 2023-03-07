@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0b04f05c16c97f44187345ac09ee38bf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy: []
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Plugins/Substance Extensions/Examples/Materials/TestSubstance.sbsar
