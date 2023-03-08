@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 5
   AttackRange: 0.3
-  AggressionRadius: 20
+  AggressionRadius: 50
   Cooldown: 0.2
   Speed: 0.5
 --- !u!136 &8187364281377477219
