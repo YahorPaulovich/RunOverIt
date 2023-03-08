@@ -3,11 +3,41 @@ guid: 167a73097549a9a4984d470dd2d7a82d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZombieGirl_Material
+    second: {fileID: 2100000, guid: c8228760022674b479b243a110bfc99f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZombieGirl_body_Material
+    second: {fileID: 2100000, guid: 7d6499b02fd66c34eac7bede207b1217, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_body_diffuse
+    second: {fileID: 2800000, guid: 956f16f2f0bc8554a9d1f3cd7c1eb9df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_diffuse
+    second: {fileID: 2800000, guid: 45ecda1160d7162409819567441a3181, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_normal
+    second: {fileID: 2800000, guid: 06a35daced14b1b458f1fbb492976ccc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_specular
+    second: {fileID: 2800000, guid: 80cd234d793da8a409ea04a1a6fdeb1e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
@@ -92,7 +122,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1

@@ -1,8 +1,6 @@
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
-using ProjectDawn.Navigation;
-using System.Security.Cryptography.X509Certificates;
 
 namespace ProjectDawn.Navigation.Sample.Zerg
 {
@@ -16,6 +14,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
                 if (!animator || !animator.isActiveAndEnabled)
                     return;
 
+                animator.SetBool(unit.DeathId, brain.State == UnitBrainState.Death);
                 animator.SetBool(unit.AttackId, brain.State == UnitBrainState.Attack);
 
                 float speed = math.length(body.Velocity);

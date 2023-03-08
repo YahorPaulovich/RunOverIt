@@ -138,6 +138,7 @@ namespace ProjectDawn.Navigation.Hybrid
         {
             var body = EntityBody;
             body.IsStopped = true;
+            body.Velocity = 0;
             EntityBody = body;
         }
 

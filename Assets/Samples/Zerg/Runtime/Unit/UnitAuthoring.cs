@@ -23,6 +23,7 @@ namespace ProjectDawn.Navigation.Sample.Zerg
             });
             world.EntityManager.AddComponentData(m_Entity, new UnitAnimator
             {
+                DeathId = Animator.StringToHash("Death"),
                 AttackId = Animator.StringToHash("Attack"),
                 MoveSpeed = MoveAnimationSpeed,
                 MoveSpeedId = Animator.StringToHash("Speed"),
@@ -39,6 +40,11 @@ namespace ProjectDawn.Navigation.Sample.Zerg
 
             if (Animator)
                 world.EntityManager.AddComponentObject(m_Entity, Animator);
+        }
+
+        private void FixedUpdate()
+        {
+            Life = World.DefaultGameObjectInjectionWorld.EntityManager.GetComponentData<UnitLife>(m_Entity).Life;
         }
 
         void OnDestroy()
