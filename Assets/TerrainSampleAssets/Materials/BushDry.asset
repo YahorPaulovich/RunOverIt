@@ -14,17 +14,11 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
-  - _BUILTIN_ALPHATEST_ON
-  - _BUILTIN_AlphaClip
-  - _DISABLE_DECALS
-  - _DISABLE_SSR
-  - _DISABLE_SSR_TRANSPARENT
-  - _DOUBLESIDED_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
     RenderType: TransparentCutout
@@ -71,6 +65,26 @@ Material:
         m_Texture: {fileID: 2800000, guid: a366a386d5147ee47b6111652608c240, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Thickness_Map:
         m_Texture: {fileID: 2800000, guid: 100a50e8b1d0bc04b95bc2f03cb760db, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -92,8 +106,8 @@ Material:
     - AO_Scale: 0.5
     - Alpha_Clip_Threshold: 0.736
     - Animation_Cutoff: 20
-    - Distance_Fade_End: 80
-    - Distance_Fade_Start: 40
+    - Distance_Fade_End: 800
+    - Distance_Fade_Start: 0
     - Dither_Scale: 1.5
     - Enable_Blend_Terrain_Color: 0
     - Normal_Scale: 1
@@ -113,6 +127,7 @@ Material:
     - Wind_Turbulence: 0
     - Wind_Wavelength: 10
     - Wind_Yaw: 180
+    - _AO: 2.4
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 1
     - _AlphaCutoffEnable: 1
@@ -131,6 +146,7 @@ Material:
     - _BUILTIN_ZTest: 4
     - _BUILTIN_ZWrite: 1
     - _BUILTIN_ZWriteControl: 0
+    - _BaseLight: 0.35
     - _Blend: 0
     - _BlendMode: 0
     - _BlendModePreserveSpecular: 0
@@ -139,6 +155,7 @@ Material:
     - _Cull: 0
     - _CullMode: 0
     - _CullModeForward: 0
+    - _Cutoff: 0.333
     - _DepthOffsetEnable: 0
     - _DiffusionProfileHash: 2.2579067
     - _Diffusion_Profile: 2.2579067
@@ -150,6 +167,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _FadeBias: 1
     - _ForceForwardEmissive: 0
+    - _Occlusion: 7.5
     - _OpaqueCullMode: 2
     - _QueueControl: 1
     - _QueueOffset: 0
@@ -160,6 +178,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _Shininess: 0.078125
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -182,6 +202,7 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
+    - _WindQuality: 0
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZTestDepthEqualForOpaque: 3
@@ -197,15 +218,20 @@ Material:
     - SplatR: {r: 0, g: 0, b: 0, a: 0}
     - Terrain_Origin: {r: 0, g: 0, b: 0, a: 0}
     - Terrain_Scale: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: -0.00000002060262, g: 7.3194675e-27, b: 69972056,
         a: -3.7115523e+9}
     - _Diffusion_Profile_Asset: {r: -0.00000002060262, g: 7.3194675e-27, b: 69972056,
         a: -3.7115523e+9}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _SSSColor: {r: 0.9811321, g: 0.44997406, b: 0.26379493, a: 0}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Subsurface_Scattering_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Thickness_Remap: {r: 0, g: 1, b: 0, a: 0}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6718516905730014579
 MonoBehaviour:
